@@ -13,8 +13,9 @@
 .nav-list {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 40px;
+  padding-top: 50px;
+  padding-left: 50px;
 }
 .nav-link {
   position: relative;
@@ -41,4 +42,12 @@
 }
 .nav-link.active::after {
   background: #747bff;
+}
+
+.content-wrapper {
+  padding-top: 50px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }

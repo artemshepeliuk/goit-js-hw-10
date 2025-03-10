@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 220px;
+    width: 100%;
+}
+
+.number-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.number-input {
+    height: 35px;
+    padding: 5px;
+}
+
+.fieldset {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    height: 55px;
+}
+
+.form-btn {
+    height: 25px;
+}
+
