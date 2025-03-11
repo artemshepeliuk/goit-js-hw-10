@@ -15,6 +15,8 @@ const datetimePicker = document.getElementById("datetime-picker");
     let userSelectedDate = null;
     let countdownInterval = null;
 
+timerButton.disabled = true;
+    
     flatpickr(datetimePicker, {
       enableTime: true,
       time_24hr: true,
@@ -59,6 +61,8 @@ const datetimePicker = document.getElementById("datetime-picker");
       const timeLeft = userSelectedDate - new Date();
       if (timeLeft <= 0) {
         clearInterval(countdownInterval);
+        datetimePicker.disabled = false;
+        timerButton.disabled = false;
         return;
       }
 
